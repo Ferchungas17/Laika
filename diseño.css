@@ -1,0 +1,252 @@
+
+/* HOVER */
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* MENU GRANDE */
+.mega-menu {
+    width: 250px;
+    padding: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+/* ITEMS */
+.mega-menu .dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* HOVER ITEMS */
+.mega-menu .dropdown-item:hover {
+    background-color: #f8f5fc;
+    color: #654090;
+}
+
+/* ICONO DERECHA */
+.mega-menu i {
+    color: #cfcfcf;
+    font-size: 18px;
+}
+.product-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-image {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.product-image img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.brand {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.product-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.price-small {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.member-price {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.quantity-pill {
+  display: inline-block;
+  border: 2px solid #7c3aed;
+  color: #7c3aed;
+  padding: 6px 14px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.btn-add {
+  background-color: #654090;
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.btn-add:hover {
+  background-color: #533276;
+  color: white;
+}
+
+.custom-indicators {
+  bottom: -60px;
+}
+
+.custom-indicators button {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50%;
+  border: 2px solid #654090 !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  margin: 0 8px !important;
+}
+
+.custom-indicators .active {
+  background-color: #654090;
+}
+/* 1. ESTADO BASE (Apagado / Inactivo) */
+  .custom-carousel-indicators button {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    
+    /*fondo transparente */
+    background-color: transparent; 
+    
+    /* AQUÍ AGREGAMOS EL BORDE: 2px, sólido, de color gris */
+    border: 1px solid #654090; 
+    
+    margin: 0 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* 2. EFECTO HOVER (Al pasar el cursor por encima de los que están apagados) */
+  /* "Encendemos" el botón rellenándolo con el color del borde */
+  .custom-carousel-indicators button:hover {
+    background-color: #654090;
+  }
+
+  /* 3. ESTADO ACTIVO (Donde estás parado actualmente) */
+  /* Para que resalte claramente en cuál diapositiva estás, podemos pintarlo 
+     de un color completamente diferente (por ejemplo, el azul de Bootstrap) 
+     tanto su borde como su fondo */
+  .custom-carousel-indicators button.active {
+    background-color: #654090;
+    border-color: #654090;
+  }
+  
+  /* Opcional: Si no quieres que el botón activo haga nada cuando le pases el cursor por encima */
+  .custom-carousel-indicators button.active:hover {
+    cursor: default;
+  }
+
+  .custom-card {
+    transition: transform 0.2s ease;
+  }
+  .custom-card:hover {
+    transform: scale(1.01); /* Un pequeño efecto visual al pasar el mouse */
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+
+  /* ESTILO DE LA ETIQUETA CURVADA (Estilo exacto de Laika) */
+  .custom-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 35px 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    /* La magia de la curva se hace con border-radius asimétrico */
+    border-top-right-radius: 80px 100px; 
+    z-index: 10;
+  }
+
+
+  /* Corrección responsive para que en móviles la tarjeta alta no se deforme demasiado */
+  @media (max-width: 767) {
+    .col-md-5 .custom-card img {
+      height: 200px !important;
+    }
+  }
+
+  /* Títulos de las columnas */
+  .footer-title {
+    color: #654090;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Estilos de los enlaces */
+  .footer-links li {
+    margin-bottom: 0.7rem;
+  }
+  .footer-links a {
+   color: #4f4f4f;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+  .footer-links a:hover {
+    color: #654090; /* Se pinta morado al pasar el mouse */
+  }
+
+  /* Personalización del buscador / input de correo */
+  .custom-input-group .form-control {
+    border: 1px solid #ced4da;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .custom-input-group .form-control:focus {
+    border-color: #654090;
+    box-shadow: none;
+  }
+  .custom-input-group .btn {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0 16px;
+    font-weight: bold;
+  }
+
+  /* Tamaño de fuente para el texto legal del fondo */
+  .legal-section {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  
+  .brand-card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    height: 140px; /* Alto fijo de las cajitas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  /* Efecto sutil al pasar el cursor sobre la marca */
+  .brand-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.08)!important;
+  }
+
+  /* Evita que los logotipos grandes deformen la tarjeta */
+  .brand-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
